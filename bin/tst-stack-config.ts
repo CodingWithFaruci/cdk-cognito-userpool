@@ -6,6 +6,23 @@ const tstEnvironmentConfig: ICdkCognitoUserpoolStackProps = {
     Application: 'CdkCognitoUserpool',
   },
   environment: 'tst',
+  userPoolName: 'userpool',
+  userPoolClientName: 'userpool-client',
+  googleClientId: 'google-clientid-secret',
+  googleClientSecret: 'google-clientsecret-secret',
+  accessTokenValidity: 8,
+  idTokenValidity: 8,
+  domainName: 'domain-name',
+  domainCertificateArn: 'arn::::',
+  email: {
+    fromEmail: 'noreply@domain.com',
+    fromName: 'your name',
+    replyTo: 'support@domain.com',
+  },
+  userInvitation: {
+    emailSubject: 'email subject',
+    emailBody: 'email body',
+  },
 };
 
 export default tstEnvironmentConfig;
