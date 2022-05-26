@@ -14,6 +14,7 @@ export interface ICdkCognitoUserpoolStackProps extends StackProps {
     fromEmail: string,
     fromName: string,
     replyTo: string,
+    region: string,
   },
   userInvitation: {
     emailSubject: string,

@@ -18,6 +18,7 @@ const tstEnvironmentConfig: ICdkCognitoUserpoolStackProps = {
     fromEmail: 'noreply@domain.com',
     fromName: 'your name',
     replyTo: 'support@domain.com',
+    region: 'eu-west-1',
   },
   userInvitation: {
     emailSubject: 'email subject',

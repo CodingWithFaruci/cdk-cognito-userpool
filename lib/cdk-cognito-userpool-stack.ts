@@ -35,6 +35,7 @@ export class CdkCognitoUserpoolStack extends Stack {
         fromEmail: props.email.fromEmail,
         fromName: props.email.fromName,
         replyTo: props.email.replyTo,
+        sesRegion: props.email.region,
       }),
       userInvitation: {
         emailSubject: props.userInvitation.emailSubject,
@@ -62,6 +63,7 @@ export class CdkCognitoUserpoolStack extends Stack {
         email: cognito.ProviderAttribute.GOOGLE_EMAIL,
         profilePicture: cognito.ProviderAttribute.GOOGLE_PICTURE,
       },
+      scopes: [],
     });
     userPool.registerIdentityProvider(googleLogin);
 
