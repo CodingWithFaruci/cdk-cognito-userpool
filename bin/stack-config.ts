@@ -1,11 +1,11 @@
 import { ICdkCognitoUserpoolStackProps } from './stack-environment-types';
 
-const prdEnvironmentConfig: ICdkCognitoUserpoolStackProps = {
+const environmentConfig: ICdkCognitoUserpoolStackProps = {
   tags: {
     Developer: 'Faruk Ada',
     Application: 'CdkCognitoUserpool',
   },
-  environment: 'prd',
+  environment: 'dev',
   userPoolName: 'userpool',
   userPoolClientName: 'userpool-client',
   googleClientId: 'google-clientid-secret',
@@ -26,4 +26,4 @@ const prdEnvironmentConfig: ICdkCognitoUserpoolStackProps = {
   },
 };
 
-export default prdEnvironmentConfig;
+export default environmentConfig;

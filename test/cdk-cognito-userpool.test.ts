@@ -1,10 +1,10 @@
 import * as cdk from 'aws-cdk-lib';
 import { Template } from 'aws-cdk-lib/assertions';
-import devEnvironmentConfig from '../bin/dev-stack-config';
+import environmentConfig from '../bin/stack-config';
 import * as Stack from '../lib/cdk-cognito-userpool-stack';
 
 const app = new cdk.App();
-const stack = new Stack.CdkCognitoUserpoolStack(app, 'MyTestStack', devEnvironmentConfig);
+const stack = new Stack.CdkCognitoUserpoolStack(app, 'MyTestStack', environmentConfig);
 const template = Template.fromStack(stack);
 
 test('UserPool', () => {
